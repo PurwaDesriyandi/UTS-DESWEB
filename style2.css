@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{  
+    background-color: rgb(17, 76, 136);
+    width: 100%;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width:250px ;
+    margin-top: 15px;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 8px;
+    position: sticky;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size:15px ;
+    font-family: sans-serif;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(13, 15, 130);
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+.nav-links ul li:hover::after{
+    width: 100%
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .text-box h2{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: rgb(13, 15, 130);
+        height: 100vh;
+        width: 150px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+    .nav-links ul li a{
+        color: white;
+        z-index: 2;
+    }
+
+}
+
+/*---Home---*/
+
+.judul{
+    background: rgb(50, 113, 177);
+    padding: 15px 15px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: Roboto Condensed, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.judul h1{
+    font-size: 30px;
+}
+.judul h2{
+    font-size: 20px;
+}
+.row{
+    margin-top:5% ;
+    display: flex;
+    justify-content: space-between;
+}
+.home-col{
+    flex-basis: 31%;
+    background: rgb(223, 239, 255);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    font-family: Roboto Condensed,Tahoma,Geneva,sans-serif;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.home-col:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0, 0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*----profile----*/
+
+.ptik{
+    background: rgb(50, 113, 177);
+    padding: 15px 15px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: Roboto Condensed, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ptik h1{
+    font-size: 30px;
+}
+.ptik h2{
+    font-size: 25px;
+}
+.video-container{
+    position: relative;
+    z-index: -1;
+    top: 0px;
+    background: black;
+    padding: 15px 15px;
+    margin: auto;
+    position: relative;
+}
+.video-container iframe{
+    width: 100%;
+    height: 90vh;
+}
+img.gambar{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+.desc{
+    padding: 15px 25px;
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+}
+.desc2{
+    padding: 15px 25px;
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+}
+
+/*--vision--*/
+
+.vision h1{
+    background: rgb(50, 113, 177);
+    padding: 15px 15px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: Roboto Condensed, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+.visi{
+    margin-top:5% ;
+    display: block;
+    justify-content: space-between;
+}
+.vision-col{
+ 
+    background: rgb(223, 239, 255);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    font-family: Roboto Condensed,Tahoma,Geneva,sans-serif;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.vision-col:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0, 0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*--footer--*/
+footer {
+	background: rgb(50, 113, 177); 
+	color: white; 
+	opacity: 90%; 
+	padding: 20px;
+	padding-left: 120px;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc; /* Menambahkan garis vertikal di bagian atas */
+    padding: 10px;
+}
+footer p {
+    font-size: 12px; /* Atur ukuran teks sesuai dengan preferensi Anda */
+}
+.kiri a{
+	color: white; /* Mengatur warna teks tautan menjadi putih */
+    text-decoration: none; 
+}
+.kiri a:hover{
+	color: rgb(35, 94, 153);
+}
+
+.kiri img {
+    width: auto; /* Atur lebar gambar di bagian kiri */
+    height: auto;
+    margin-left: 100px;
+}
+.kiri p {
+    margin-left: 100px; /* Menambahkan jarak antara teks dan garis tepi kiri */
+}
+
+.divider {
+    width: 1px; /* Lebar garis vertikal */
+    background-color: rgb(17, 76, 136); /* Warna garis vertikal */
+    height: 350px; /* Sesuaikan dengan tinggi konten */
+    margin: 0 auto; /* Atur jarak antara garis vertikal dan konten */
+    align-self: center;
+}
+
+
+.kanankiri, .kanantengah, .kanankanan {
+    flex: 1;
+    margin: 10px;
+}
+.kanan {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.kanankanan img{
+	max-width: 100%;
+}
+
+.kanankiri, .kanantengah, .kanankanan {
+    margin: 10px;
+}
+.kanankiri a{
+	color: white; /* Mengatur warna teks tautan menjadi putih */
+    text-decoration: none; 
+}
+.kanantengah a{
+	color: white; /* Mengatur warna teks tautan menjadi putih */
+    text-decoration: none; 
+}
+.kanankiri a:hover{
+	color:rgb(35, 94, 153);
+}
+.kanantengah a:hover{
+	color: rgb(35, 94, 153);
+}
+.bawah {
+    background: rgb(17, 76, 136); /* Atur warna latar belakang sesuai preferensi */
+    padding: 20px; /* Atur padding sesuai kebutuhan */
+    text-align: center; 
+    color: white;
+}
+
+/*--facility--*/
+
+.fasilitas{
+    background: rgb(50, 113, 177);
+    padding: 15px 15px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: Roboto Condensed, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+.lecture h1{
+    text-align: center;
+    color: black;
+    font-family: Roboto Condensed, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+img.lecture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+.lecture p{
+    padding: 15px 25px;
+    display: inline-block;
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+img.lab{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+img.library{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+/*--contact--*/
+.contact{
+    background: rgb(50, 113, 177);
+    padding: 15px 15px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: Roboto Condensed, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+.location{
+    width: 100%;
+    margin: 0;
+    padding: 50px 0;
+    float: left;
+    background: rgb(50, 113, 177);
+    position: relative;
+}
+.location iframe{
+    width:100%;
+}
+.entry-content h2{
+    font-family:Roboto Condensed,Arial,Helvetica,sans-serif ;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 40px;
+    color: white;
+    margin-bottom: 0px;
+    text-align: left;
+    
+}
+.entry-content p{
+    margin: 0px;
+    display: block;
+    margin-inline-start: 1em;
+    font-size: 20px;
+    text-align: left;
+
+}
+.entry-content p a{
+    color: white;
+}
